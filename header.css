@@ -1,0 +1,83 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    height: 80px;
+    background-color: black;
+    width: 100%;
+} 
+#nav{
+    display: inline-block;
+    text-align: center;
+  }  
+#nav li{
+    display: inline-block;
+    position: relative;
+}  
+#nav > li > a{
+    color: #fff;
+}
+#nav li a{
+    
+    text-decoration: none;
+    line-height: 80px;
+    padding: 0 24px;
+    font-size: 25px;
+    display: inline-block;
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    background-color: #fff;
+    color: black;
+    
+}
+.ti-angle-down{
+    font-size: 14px;
+}
+#nav .subnav{
+    position: absolute;
+    background-color: #fff;
+}
+#nav .subnav a{
+    color: #000;
+    
+}
+.subnav li a{
+    float: left;
+    padding: 10px 0;
+    color: white;
+    font-size: 20px;
+}
+#header .search-btn{
+    float: right;
+    padding:0 33px;
+    line-height: 80px;
+    cursor: pointer;
+    text-align: center;
+}
+#header .search-btn:hover{
+    background-color: red;
+    color: #fff;
+}
+#header .search-icon{
+    color: #fff;
+    font-size: 30px;
+}
+.logo{
+    float: left;
+   
+}
+#slider{
+    min-height: 1000px;
+    background-color: #333;
+    
+}
+
+
