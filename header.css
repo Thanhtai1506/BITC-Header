@@ -12,10 +12,17 @@ html{
     height: 80px;
     background-color: black;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
 } 
 #nav{
     display: inline-block;
     text-align: center;
+    margin-left: -80px; 
   }  
 #nav li{
     display: inline-block;
@@ -33,15 +40,20 @@ html{
     display: inline-block;
 }
 #nav .subnav li:hover a,
-#nav > li:hover > a{
+#nav > li:hover > a,{
     background-color: #fff;
-    color: black;
+    
+    
+}
+#nav > li:hover .subnav{
+    display: block;
     
 }
 .ti-angle-down{
     font-size: 14px;
 }
 #nav .subnav{
+    display: none;
     position: absolute;
     background-color: #fff;
 }
@@ -72,12 +84,174 @@ html{
 }
 .logo{
     float: left;
+    
    
 }
+/* -------------------------- */
 #slider{
     min-height: 1000px;
-    background-color: #333;
+    margin-top: 80px;  
+    padding-top: 50%;
+    background: url(/image/a87fbaf803c7fd99a4d6\(1\).jpg) top center / cover no-repeat; 
+}
+#slider .text-content{
+position: absolute;
+bottom: 35px;
+left: 50%;
+color: #fff;
+}
+#slider .text-heading{
+font-weight: 600;
+}
+#slider .text-description{
+
+}
+
+/* ----------------------------- */
+
+#content{
+
+}
+
+#content .content-section{
+    /* left: 45%; */
+    /* position: absolute; */
+    margin: 64px 0;
+    text-align: center;
+    font-size: 18px;
+
+}
+#content .products-list{
+    /* position: absolute; */
+    margin-left: 8%;
+    /* margin: 100px 0; */
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    /* z-index: 0; */
+}
+#content .product-item img{
+    /* position: relative; */
+    border: black solid 3px;
+    width: 400px;
+    height: auto;
+    margin: 5px;
+    
+}
+.content-section .content-heading{
+    margin-top: 10px;
+}
+#content .product-item {
+    text-align: center;
+    height: 550px;
+    border: black solid 3px;
+    margin: 10px;
     
 }
 
+#content .name-item{
+    width: auto;
+    height: 100px;
+}
+#content .icon-item button{
+    width: 80px;
+    height: 40px;
+    bottom: 0 ;
+    background-color: black;
+    color: #fff;
+}
+.buy{
+    margin: 10px 0;
+}
+#content .icon-item button:hover{
+    background-color: antiquewhite;
+    color: brown;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-half{
+    width: 50%;
+    color: #fff;
+}
+.col-full{
+    width: 100%;
+}
+.contact-info{
+    font-size: 18px;
+    width: 30px;
+    display: inline-block;
+}
+.contact-section{
+   background-color: #000;
+   width: 100%;
+   position: relative;
+   bottom: 0;
+   left: 0;
+   right: 0;
+  
+}
+.contact-section .section-heading{
+    text-align: center;
+    margin-top: 60px ;
+    /* position: absolute; */
+    font-size: 32px;
+    color: #fff;
+    padding-top: 44px;
+    font-size: 30px;
+}
+.contact-section h2{
+    margin-top: 20px ;
+}
 
+.contact-section .row{
+    margin: 50px 0 0 0;
+}
+.contact-section > .row{
+    display: flex;
+}
+.contact-section > .row > .luachon{
+    margin-left: 50px;
+}
+
+.contact-section > .row > .col-half {
+    width: 100%;
+    margin: 10px 0 10px 50px;
+    color: #fff;
+}
+.contact-section > .row > .col-half > p{
+    margin-bottom: 20px;
+}
+
+.luachon {
+    /* background-color: red; */
+    margin-right: 150px;
+    
+}
+.luachon > form > .name1 {
+    /* background-color: blue; */
+    
+}
+.luachon1{
+    height: 40px;
+    width: 280px;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    margin: 10px 0px 10px 0;
+}
+.luachon2{
+    height: 30px;
+    width: 100px;
+    outline: none;
+    border: none;
+    margin-bottom: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.luachon2:hover{
+    background-color: antiquewhite;
+    color: brown;
+}
