@@ -135,8 +135,14 @@ font-weight: 600;
     border: black solid 3px;
     width: 290px;
     height: auto;
-    margin: 5px;
-    
+    margin: 5px;    
+    transition:  0.5s;
+    cursor: pointer;
+}
+#content .product-item img:hover{
+    height: auto;
+    width: 300px;
+
 }
 .content-section .content-heading{
     margin-top: 10px;
