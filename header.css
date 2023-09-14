@@ -92,7 +92,7 @@ html{
     min-height: 1000px;
     margin-top: 80px;  
     padding-top: 50%;
-    background: url(/image/a87fbaf803c7fd99a4d6\(1\).jpg) top center / cover no-repeat; 
+    background: url(./image/a87fbaf803c7fd99a4d6\(1\).jpg) top center / cover no-repeat; 
 }
 #slider .text-content{
 position: absolute;
